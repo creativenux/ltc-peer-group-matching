@@ -81,6 +81,10 @@ uvicorn api.app:app
 
 Open http://127.0.0.1:8000. The interface lets you generate and validate a dataset, run matching, inspect the hard rules, explore groups on a map, look up any profile, and view or re-run the evaluation. API documentation is at http://127.0.0.1:8000/api/docs.
 
+## Online version
+
+`render.yaml` deploys the web interface to [Render](https://render.com) as a view-only. With `READ_ONLY=1`, generating data, running matching and running the evaluation are turned off, and the site shows the results committed in `output/` (the 3,000-profile dataset with seed 42, its matching results and the evaluation).
+
 ## Documentation
 
 - [DECISIONS.md](DECISIONS.md): design decisions and the reason for each

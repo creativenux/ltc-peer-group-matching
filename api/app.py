@@ -7,11 +7,16 @@ the matching method and the evaluation. Reads and writes the output folder.
 Run from the project folder:
   uvicorn api.app:app --reload
 then open http://127.0.0.1:8000
+
+Set READ_ONLY=1 to make the app view-only (used for the online version):
+generating datasets, running matching and running the evaluation are then
+turned off, and only the results already in the output folder can be viewed.
 """
 
 from __future__ import annotations
 
 import json
+import os
 import re
 from functools import lru_cache
 from pathlib import Path
@@ -87,6 +92,16 @@ class EvaluationRequest(BaseModel):
 # =============================================================================
 # FILE HELPERS
 # =============================================================================
+
+def _read_only() -> bool:
+    return os.environ.get("READ_ONLY", "").lower() in ("1", "true", "yes")
+
+
+def _require_writable() -> None:
+    if _read_only():
+        raise HTTPException(403, "This is a view-only version. Run the project locally to "
+                                 "generate data, run matching or run the evaluation.")
+
 
 def _dataset_csv(n: int, seed: int) -> Path:
     path = paths.dataset_dir(n) / f"profiles_seed{seed}.csv"
@@ -171,7 +186,7 @@ def state():
                          if (m := re.fullmatch(r"evaluation_n(\d+)\.json", f.name)))
     key = lambda x: (x["n"], x["seed"])
     return {"datasets": sorted(datasets, key=key), "matching_runs": sorted(runs, key=key),
-            "evaluations": evaluations}
+            "evaluations": evaluations, "read_only": _read_only()}
 
 
 # =============================================================================
@@ -181,6 +196,7 @@ def state():
 @app.post("/api/datasets")
 def create_dataset(req: DatasetRequest):
     """Generate a dataset with its validation report and figures."""
+    _require_writable()
     outdir = paths.dataset_dir(req.n)
     df = generate_dataset(req.n, req.seed)
     save_dataset(df, str(outdir), req.seed, "csv")
@@ -233,6 +249,7 @@ def profiles(n: int, seed: int, request: Request, search: str = "", page: int = 
 @app.post("/api/matching")
 def create_matching(req: MatchingRequest):
     """Run every method on a dataset and save the result to output/matching."""
+    _require_writable()
     df = _profiles(req.n, req.seed)
     run = run_all_methods(df, seed=req.seed)
     path = paths.OUTPUT_DIR / "matching" / f"matching_n{req.n}_seed{req.seed}.json"
@@ -342,6 +359,7 @@ def evaluation(n: int):
 
 @app.post("/api/evaluation/run")
 def run_evaluation(req: EvaluationRequest):
+    _require_writable()
     if not JOB.start(req.n, req.seed, req.replicates):
         raise HTTPException(409, "An evaluation is already running.")
     return JOB.snapshot()

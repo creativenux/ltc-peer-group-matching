@@ -31,7 +31,7 @@ const PROFILE_FIELDS = [
 const TEAL = '#0F6E6E', OCHRE = '#B7791F', INK = '#17212B';
 const MATCH_LIMIT = 10000;
 
-const state = { datasets: [], runs: [], evaluations: [], current: null, charts: [], poll: null };
+const state = { datasets: [], runs: [], evaluations: [], readOnly: false, current: null, charts: [], poll: null };
 const $ = (sel, root = document) => root.querySelector(sel);
 const view = () => $('#view');
 
@@ -87,7 +87,8 @@ function emptyState(message, actionLabel, actionId) {
 
 async function loadState(preferred) {
   const s = await api('/api/state');
-  Object.assign(state, { datasets: s.datasets, runs: s.matching_runs, evaluations: s.evaluations });
+  Object.assign(state, { datasets: s.datasets, runs: s.matching_runs, evaluations: s.evaluations, readOnly: s.read_only });
+  applyReadOnly();
   const select = $('#dataset-select');
   if (!state.datasets.length) {
     select.innerHTML = '<option value="">No datasets yet</option>';
@@ -103,9 +104,20 @@ async function loadState(preferred) {
   updateMatchStatus();
 }
 
+// View-only version (online): hide every control that generates data or runs anything.
+function applyReadOnly() {
+  $('#new-dataset').classList.toggle('hidden', state.readOnly);
+  $('#read-only-note').classList.toggle('hidden', !state.readOnly);
+}
+
 function updateMatchStatus() {
   const status = $('#match-status'), button = $('#run-matching');
   if (!cur()) { status.textContent = ''; button.classList.add('hidden'); return; }
+  if (state.readOnly) {
+    status.innerHTML = isMatched() ? '<span class="pill pill-ok">Matched</span>' : '';
+    button.classList.add('hidden');
+    return;
+  }
   if (isMatched()) {
     status.innerHTML = '<span class="pill pill-ok">Matched</span>';
     button.classList.remove('hidden');
@@ -210,8 +222,9 @@ function closeDrawer() {
 async function renderDataset() {
   if (!cur()) {
     view().innerHTML = header('Dataset', 'Synthetic profiles of UK adults living with long-term conditions.') +
-      emptyState('There is no dataset yet. Generate one to start.', 'New dataset', 'empty-new');
-    $('#empty-new').onclick = () => $('#dataset-dialog').showModal();
+      (state.readOnly ? emptyState('No dataset is available in this version.')
+                      : emptyState('There is no dataset yet. Generate one to start.', 'New dataset', 'empty-new'));
+    const d = $('#empty-new'); if (d) d.onclick = () => $('#dataset-dialog').showModal();
     return;
   }
   const v = await api(`/api/datasets/${cur().n}/${cur().seed}/validation`);
@@ -247,6 +260,10 @@ async function renderDataset() {
 // ---------------------------------------------------------------------------
 
 function needsMatching(title, lede) {
+  if (state.readOnly) {
+    view().innerHTML = header(title, lede) + emptyState('Matching results are not available for this dataset in this version.');
+    return;
+  }
   const tooBig = cur() && cur().n > MATCH_LIMIT;
   view().innerHTML = header(title, lede) + (cur()
     ? emptyState(tooBig ? `Matching runs on datasets of up to ${MATCH_LIMIT.toLocaleString()} profiles. Choose or generate a smaller dataset.`
@@ -460,6 +477,9 @@ const METRIC_INFO = {
 };
 
 function evaluationForm(defaults) {
+  if (state.readOnly) {
+    return `<div class="block"><h3>Run the evaluation</h3><p class="text-sm text-muted">Running the evaluation is turned off in this view-only version. The results above were produced with <code>run_evaluation.py</code>.</p></div>`;
+  }
   return `<div class="block"><h3>Run the evaluation</h3>
     <p class="text-sm text-muted mb-3">Generates any missing replicate datasets, runs every method on each, then runs the statistical tests and the weight sensitivity analysis. About 6 minutes for 20 replicates of 3,000 profiles.</p>
     <form id="eval-form" class="flex flex-wrap items-end gap-3">
@@ -473,6 +493,7 @@ function evaluationForm(defaults) {
 }
 
 function bindEvaluationForm() {
+  if (state.readOnly) return;
   $('#eval-form').onsubmit = async e => {
     e.preventDefault();
     const f = e.target;

@@ -29,7 +29,7 @@ def test_index_page_is_served(client):
 
 def test_state_is_empty_before_anything_is_generated(client):
     state = client.get("/api/state").json()
-    assert state == {"datasets": [], "matching_runs": [], "evaluations": []}
+    assert state == {"datasets": [], "matching_runs": [], "evaluations": [], "read_only": False}
 
 
 def test_generate_dataset_writes_to_output_and_is_listed(client, tmp_path):
@@ -121,3 +121,20 @@ def test_evaluation_job_is_idle_until_started(client):
     assert client.get("/api/jobs/current").json()["status"] == "idle"
     assert client.post("/api/evaluation/run",
                        json={"n": 50, "seed": 1, "replicates": 20}).status_code == 422
+
+
+@pytest.fixture
+def read_only_client(tmp_path, monkeypatch):
+    monkeypatch.setattr(paths, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setenv("READ_ONLY", "1")
+    return TestClient(app)
+
+
+def test_read_only_mode_blocks_every_change(read_only_client):
+    assert read_only_client.get("/api/state").json()["read_only"] is True
+    for url, body in [("/api/datasets", {"n": 300, "seed": 5}),
+                      ("/api/matching", {"n": 300, "seed": 5}),
+                      ("/api/evaluation/run", {"n": 300, "seed": 5, "replicates": 5})]:
+        r = read_only_client.post(url, json=body)
+        assert r.status_code == 403, url
+        assert "view-only" in r.json()["detail"]

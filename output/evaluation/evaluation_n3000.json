@@ -1,0 +1,2403 @@
+{
+ "n": 3000,
+ "seeds": [
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61
+ ],
+ "methods": [
+  "weighted_gower",
+  "unweighted_gower",
+  "single_age_band",
+  "single_primary_support_goal",
+  "random"
+ ],
+ "replicates": [
+  {
+   "seed": 42,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.1300664027127072,
+     "silhouette_unweighted": 0.10390638308894491,
+     "within_group_distance": 0.1130068471307205,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.015691609977324262,
+      "primary_support_goal": 0.07127551020408163,
+      "age_band": 0.16390589569160996,
+      "condition_duration_band": 0.20761564625850343,
+      "gender": 0.18332766439909298,
+      "engagement_level": 0.27108276643990925
+     },
+     "cohesion_index": 0.8774878936268378,
+     "unmatched_rate": 0.02266666666666667,
+     "n_groups": 420
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.05706279297674969,
+     "silhouette_unweighted": 0.1333295036854429,
+     "within_group_distance": 0.1386602066299706,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.04904761904761905,
+      "primary_support_goal": 0.1653968253968254,
+      "age_band": 0.20212443310657593,
+      "condition_duration_band": 0.2222879818594104,
+      "gender": 0.06749433106575964,
+      "engagement_level": 0.15242913832199545
+     },
+     "cohesion_index": 0.8577325770249337,
+     "unmatched_rate": 0.02266666666666667,
+     "n_groups": 420
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.2468658740229106,
+     "silhouette_unweighted": -0.22666295771403988,
+     "within_group_distance": 0.3874692964024026,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.23002267573696145,
+      "primary_support_goal": 0.7825736961451246,
+      "age_band": 0.0115547052154195,
+      "condition_duration_band": 0.38804761904761903,
+      "gender": 0.5127380952380951,
+      "engagement_level": 0.3701814058956916
+     },
+     "cohesion_index": 0.6418087769693513,
+     "unmatched_rate": 0.02266666666666667,
+     "n_groups": 420
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23114524956373694,
+     "silhouette_unweighted": -0.2241533941470999,
+     "within_group_distance": 0.24833992853625853,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.23030045351473924,
+      "primary_support_goal": 0.04764172335600906,
+      "age_band": 0.30875992063492064,
+      "condition_duration_band": 0.3857641723356009,
+      "gender": 0.4977267573696144,
+      "engagement_level": 0.3743055555555555
+     },
+     "cohesion_index": 0.7506459039823675,
+     "unmatched_rate": 0.02266666666666667,
+     "n_groups": 420
+    },
+    "random": {
+     "silhouette_weighted": -0.2937573962195132,
+     "silhouette_unweighted": -0.2788290369921833,
+     "within_group_distance": 0.440349365061482,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.23108843537414964,
+      "primary_support_goal": 0.7944954648526077,
+      "age_band": 0.30934807256235825,
+      "condition_duration_band": 0.3846111111111111,
+      "gender": 0.4972562358276643,
+      "engagement_level": 0.37107142857142855
+     },
+     "cohesion_index": 0.6050510273825822,
+     "unmatched_rate": 0.02266666666666667,
+     "n_groups": 420
+    }
+   },
+   "seconds": {
+    "weighted_gower": 20.461630334029905,
+    "unweighted_gower": 18.842728625051677,
+    "single_age_band": 0.5357632909435779,
+    "single_primary_support_goal": 0.5585364999715239,
+    "random": 0.9448178749298677
+   }
+  },
+  {
+   "seed": 43,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.11762497657208895,
+     "silhouette_unweighted": 0.10438872519532424,
+     "within_group_distance": 0.11841921853037617,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.025400586774994356,
+      "primary_support_goal": 0.0795926427443015,
+      "age_band": 0.16701647483638005,
+      "condition_duration_band": 0.20796208530805688,
+      "gender": 0.18487361769352287,
+      "engagement_level": 0.2683592868426991
+     },
+     "cohesion_index": 0.8739875960181073,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.04442114475303598,
+     "silhouette_unweighted": 0.12562379987818362,
+     "within_group_distance": 0.1421606230544954,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.03812344843150531,
+      "primary_support_goal": 0.17781539155946738,
+      "age_band": 0.21471733243060256,
+      "condition_duration_band": 0.22595350936583167,
+      "gender": 0.0762074023922365,
+      "engagement_level": 0.15416102459941322
+     },
+     "cohesion_index": 0.8559197383225897,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.2524526162429735,
+     "silhouette_unweighted": -0.22646223055844567,
+     "within_group_distance": 0.38344162238741436,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2065447980139923,
+      "primary_support_goal": 0.7855788761002032,
+      "age_band": 0.016765402843601895,
+      "condition_duration_band": 0.39097833446174673,
+      "gender": 0.5087508463100879,
+      "engagement_level": 0.3825236966824645
+     },
+     "cohesion_index": 0.6485025114723569,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23528697140603627,
+     "silhouette_unweighted": -0.22862304680133474,
+     "within_group_distance": 0.23942113776765409,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2020085759422252,
+      "primary_support_goal": 0.052127059354547506,
+      "age_band": 0.29720858722635973,
+      "condition_duration_band": 0.3845271947641616,
+      "gender": 0.4942450914014894,
+      "engagement_level": 0.38014838636876547
+     },
+     "cohesion_index": 0.7578428449329982,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    },
+    "random": {
+     "silhouette_weighted": -0.29145314032558794,
+     "silhouette_unweighted": -0.2736600624744624,
+     "within_group_distance": 0.42899268334820095,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20362220717670956,
+      "primary_support_goal": 0.785336267208305,
+      "age_band": 0.30232453170841794,
+      "condition_duration_band": 0.3818032046942,
+      "gender": 0.4994640036109229,
+      "engagement_level": 0.3752087564883774
+     },
+     "cohesion_index": 0.6142108309045143,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    }
+   },
+   "seconds": {
+    "weighted_gower": 19.791207250091247,
+    "unweighted_gower": 18.893605999997817,
+    "single_age_band": 0.5430011249845847,
+    "single_primary_support_goal": 0.524101541028358,
+    "random": 0.5229697079630569
+   }
+  },
+  {
+   "seed": 44,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.11418555335567539,
+     "silhouette_unweighted": 0.08845196068323627,
+     "within_group_distance": 0.1183739838049532,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.025733468742947414,
+      "primary_support_goal": 0.07938388625592417,
+      "age_band": 0.1673239675016926,
+      "condition_duration_band": 0.20281539155946737,
+      "gender": 0.19137327916948768,
+      "engagement_level": 0.270209884901828
+     },
+     "cohesion_index": 0.8726071417215692,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.04637928460735784,
+     "silhouette_unweighted": 0.12750100987480503,
+     "within_group_distance": 0.1422404795899552,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.043929135635296775,
+      "primary_support_goal": 0.1771778379598285,
+      "age_band": 0.2048775671406003,
+      "condition_duration_band": 0.22915933197923719,
+      "gender": 0.07380388174227036,
+      "engagement_level": 0.15394944707740912
+     },
+     "cohesion_index": 0.8539403764590848,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.24156370964251872,
+     "silhouette_unweighted": -0.22261855596880317,
+     "within_group_distance": 0.3818678974323195,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2012863913337847,
+      "primary_support_goal": 0.7906623786955539,
+      "age_band": 0.01681336041525615,
+      "condition_duration_band": 0.3922331302189122,
+      "gender": 0.4969814940194086,
+      "engagement_level": 0.37234822839088233
+     },
+     "cohesion_index": 0.6452776627687412,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23128475724294842,
+     "silhouette_unweighted": -0.22297934856419557,
+     "within_group_distance": 0.2428934843556332,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.1999605055292259,
+      "primary_support_goal": 0.057402392236515457,
+      "age_band": 0.3056956668923494,
+      "condition_duration_band": 0.3918032046942,
+      "gender": 0.5059241706161136,
+      "engagement_level": 0.3713608666215302
+     },
+     "cohesion_index": 0.7546282482977739,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    },
+    "random": {
+     "silhouette_weighted": -0.29509497989234446,
+     "silhouette_unweighted": -0.2783364553090217,
+     "within_group_distance": 0.4309404006811061,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2014500112841345,
+      "primary_support_goal": 0.7870288873843376,
+      "age_band": 0.3047633152787181,
+      "condition_duration_band": 0.3918156172421576,
+      "gender": 0.503283683141503,
+      "engagement_level": 0.3753751974723538
+     },
+     "cohesion_index": 0.6099407886387844,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 422
+    }
+   },
+   "seconds": {
+    "weighted_gower": 19.40802887501195,
+    "unweighted_gower": 18.151760292006657,
+    "single_age_band": 0.578214667038992,
+    "single_primary_support_goal": 0.5903489999473095,
+    "random": 0.5340966250514612
+   }
+  },
+  {
+   "seed": 45,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.13238266873077184,
+     "silhouette_unweighted": 0.09980155585746073,
+     "within_group_distance": 0.1134596262068037,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.018312827523353836,
+      "primary_support_goal": 0.07593984962406015,
+      "age_band": 0.155637673729779,
+      "condition_duration_band": 0.1966928685349738,
+      "gender": 0.18960469355206194,
+      "engagement_level": 0.28556618819776713
+     },
+     "cohesion_index": 0.8761178950861046,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 418
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.04624448223089159,
+     "silhouette_unweighted": 0.1323162402915221,
+     "within_group_distance": 0.13959555926967307,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.040869218500797444,
+      "primary_support_goal": 0.17455570745044427,
+      "age_band": 0.20864376851218955,
+      "condition_duration_band": 0.22360788334472548,
+      "gender": 0.06785144679881522,
+      "engagement_level": 0.14661369332421964
+     },
+     "cohesion_index": 0.8554874646711674,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 418
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.2390649119615742,
+     "silhouette_unweighted": -0.22287139777230755,
+     "within_group_distance": 0.38489412489018165,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.22001025290498974,
+      "primary_support_goal": 0.7864718614718615,
+      "age_band": 0.012643825472772841,
+      "condition_duration_band": 0.38377648667122355,
+      "gender": 0.4994702665755297,
+      "engagement_level": 0.37934039644565953
+     },
+     "cohesion_index": 0.6445952041989521,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 418
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23195755873410606,
+     "silhouette_unweighted": -0.2260188708397928,
+     "within_group_distance": 0.2468004698319741,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21818751424014576,
+      "primary_support_goal": 0.05071200729095465,
+      "age_band": 0.3104992595124174,
+      "condition_duration_band": 0.38526999316473,
+      "gender": 0.503075871496924,
+      "engagement_level": 0.3816302118933697
+     },
+     "cohesion_index": 0.7502609358374149,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 418
+    },
+    "random": {
+     "silhouette_weighted": -0.3025713614427601,
+     "silhouette_unweighted": -0.2739532950604109,
+     "within_group_distance": 0.4364578696675969,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21952608794714057,
+      "primary_support_goal": 0.7870414673046252,
+      "age_band": 0.3091108452950558,
+      "condition_duration_band": 0.3868341307814992,
+      "gender": 0.5041068580542264,
+      "engagement_level": 0.37897300068352696
+     },
+     "cohesion_index": 0.6071972081371207,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 418
+    }
+   },
+   "seconds": {
+    "weighted_gower": 20.652494000038132,
+    "unweighted_gower": 19.224215833004564,
+    "single_age_band": 0.5537371250102296,
+    "single_primary_support_goal": 0.9460122500313446,
+    "random": 0.8171287919394672
+   }
+  },
+  {
+   "seed": 46,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.13609329267423362,
+     "silhouette_unweighted": 0.10244222759005764,
+     "within_group_distance": 0.11577096209039925,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.019567922180748782,
+      "primary_support_goal": 0.07601515665648682,
+      "age_band": 0.15825698450401537,
+      "condition_duration_band": 0.2093371790521434,
+      "gender": 0.18372356068318063,
+      "engagement_level": 0.2869330392489537
+     },
+     "cohesion_index": 0.8763305806639886,
+     "unmatched_rate": 0.017666666666666667,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.056911059346042556,
+     "silhouette_unweighted": 0.13729164161994736,
+     "within_group_distance": 0.1418289717834328,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.048523922633186285,
+      "primary_support_goal": 0.17488406288881347,
+      "age_band": 0.20767022961203485,
+      "condition_duration_band": 0.22141839158466234,
+      "gender": 0.06355050333672661,
+      "engagement_level": 0.1570976133921502
+     },
+     "cohesion_index": 0.8553925195079027,
+     "unmatched_rate": 0.017666666666666667,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.25516900647902624,
+     "silhouette_unweighted": -0.22884157574627084,
+     "within_group_distance": 0.38462383505370207,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21408777287637146,
+      "primary_support_goal": 0.7868736568261508,
+      "age_band": 0.015367322701051915,
+      "condition_duration_band": 0.3947573803868341,
+      "gender": 0.4966463069788485,
+      "engagement_level": 0.3721185386268521
+     },
+     "cohesion_index": 0.645838913705789,
+     "unmatched_rate": 0.017666666666666667,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.22890098218741597,
+     "silhouette_unweighted": -0.22527595260860703,
+     "within_group_distance": 0.24982655142414936,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21790521434226898,
+      "primary_support_goal": 0.060575726727745714,
+      "age_band": 0.31605587603212304,
+      "condition_duration_band": 0.38877502544960973,
+      "gender": 0.5027542133242845,
+      "engagement_level": 0.3695707499151679
+     },
+     "cohesion_index": 0.7513135243527003,
+     "unmatched_rate": 0.017666666666666667,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.30210326585096936,
+     "silhouette_unweighted": -0.27462649431057246,
+     "within_group_distance": 0.4348912009854907,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2110055423594616,
+      "primary_support_goal": 0.7876710779323606,
+      "age_band": 0.31424753987105525,
+      "condition_duration_band": 0.38783961090374397,
+      "gender": 0.5027824906684764,
+      "engagement_level": 0.37584266485691664
+     },
+     "cohesion_index": 0.6105642425580499,
+     "unmatched_rate": 0.017666666666666667,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 25.380333041073754,
+    "unweighted_gower": 19.863933917018585,
+    "single_age_band": 0.5629577919607982,
+    "single_primary_support_goal": 0.5161989160114899,
+    "random": 0.5611403749790043
+   }
+  },
+  {
+   "seed": 47,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.15174802749432692,
+     "silhouette_unweighted": 0.12093729067948931,
+     "within_group_distance": 0.11311420272280794,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.014483655695057118,
+      "primary_support_goal": 0.0712306300192286,
+      "age_band": 0.1657759303246239,
+      "condition_duration_band": 0.20944350186630473,
+      "gender": 0.17163216830675262,
+      "engagement_level": 0.28113052822078943
+     },
+     "cohesion_index": 0.8760216382351697,
+     "unmatched_rate": 0.02,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.06058766206972579,
+     "silhouette_unweighted": 0.141644960955004,
+     "within_group_distance": 0.14116807278808433,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.04318516004976813,
+      "primary_support_goal": 0.17449949100780454,
+      "age_band": 0.2084040266938129,
+      "condition_duration_band": 0.22979527202805114,
+      "gender": 0.0664065151001018,
+      "engagement_level": 0.14921106209704782
+     },
+     "cohesion_index": 0.855173724293693,
+     "unmatched_rate": 0.02,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.24015554864099287,
+     "silhouette_unweighted": -0.22193077120784366,
+     "within_group_distance": 0.3856411388258819,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21730573464540207,
+      "primary_support_goal": 0.7912905779889152,
+      "age_band": 0.013990216038909624,
+      "condition_duration_band": 0.3818640425291256,
+      "gender": 0.508946951702296,
+      "engagement_level": 0.3743863816310372
+     },
+     "cohesion_index": 0.6456135499707668,
+     "unmatched_rate": 0.02,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.2246883524900035,
+     "silhouette_unweighted": -0.21610520520754603,
+     "within_group_distance": 0.24679118956453605,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21864042529125663,
+      "primary_support_goal": 0.05523130867548919,
+      "age_band": 0.31110734079855223,
+      "condition_duration_band": 0.3821140142517815,
+      "gender": 0.5000735210948987,
+      "engagement_level": 0.3712589073634204
+     },
+     "cohesion_index": 0.7524228104218943,
+     "unmatched_rate": 0.02,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.288570538919485,
+     "silhouette_unweighted": -0.2720449513874178,
+     "within_group_distance": 0.4369654171053967,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21340911661576742,
+      "primary_support_goal": 0.7909512498586133,
+      "age_band": 0.3134981902499717,
+      "condition_duration_band": 0.39064359235380613,
+      "gender": 0.5049485352335709,
+      "engagement_level": 0.3774799230856238
+     },
+     "cohesion_index": 0.6083194160885387,
+     "unmatched_rate": 0.02,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 25.18145137501415,
+    "unweighted_gower": 20.445572207914665,
+    "single_age_band": 0.5755650829523802,
+    "single_primary_support_goal": 0.5088561250595376,
+    "random": 0.5329847090179101
+   }
+  },
+  {
+   "seed": 48,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.13051988479935162,
+     "silhouette_unweighted": 0.09757179930469576,
+     "within_group_distance": 0.1144444836194192,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.018606492478226443,
+      "primary_support_goal": 0.07620178712815293,
+      "age_band": 0.1574001809750028,
+      "condition_duration_band": 0.2027440334803755,
+      "gender": 0.18445311616332993,
+      "engagement_level": 0.2860507861101685
+     },
+     "cohesion_index": 0.8765299187676644,
+     "unmatched_rate": 0.01633333333333333,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.05410019665092547,
+     "silhouette_unweighted": 0.13288709353890324,
+     "within_group_distance": 0.13893002432208412,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.03362176224409004,
+      "primary_support_goal": 0.1826094333220224,
+      "age_band": 0.20114240470535005,
+      "condition_duration_band": 0.22332541567695965,
+      "gender": 0.06563171586924556,
+      "engagement_level": 0.1580788372356068
+     },
+     "cohesion_index": 0.8578663122535359,
+     "unmatched_rate": 0.01633333333333333,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.24966753583107945,
+     "silhouette_unweighted": -0.22441364750480236,
+     "within_group_distance": 0.3825330229426493,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20959733061870828,
+      "primary_support_goal": 0.78698111073408,
+      "age_band": 0.014436998077140594,
+      "condition_duration_band": 0.38075783282434117,
+      "gender": 0.504490442257663,
+      "engagement_level": 0.38282999660671874
+     },
+     "cohesion_index": 0.6486720871587278,
+     "unmatched_rate": 0.01633333333333333,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.24025235894466948,
+     "silhouette_unweighted": -0.22777904310794878,
+     "within_group_distance": 0.24534286264965435,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21025902047279715,
+      "primary_support_goal": 0.05766316027598687,
+      "age_band": 0.3057912000904875,
+      "condition_duration_band": 0.38139916299061194,
+      "gender": 0.5066225540097273,
+      "engagement_level": 0.3834068544282321
+     },
+     "cohesion_index": 0.7548423947047285,
+     "unmatched_rate": 0.01633333333333333,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.285899913444911,
+     "silhouette_unweighted": -0.27274656037937045,
+     "within_group_distance": 0.4346122496681947,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2107114579798665,
+      "primary_support_goal": 0.7893224748331636,
+      "age_band": 0.30589299852957813,
+      "condition_duration_band": 0.3866157674471214,
+      "gender": 0.5080420766881574,
+      "engagement_level": 0.38441352788146144
+     },
+     "cohesion_index": 0.6132470012419681,
+     "unmatched_rate": 0.01633333333333333,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 26.451520708971657,
+    "unweighted_gower": 20.47207266604528,
+    "single_age_band": 0.5308821250218898,
+    "single_primary_support_goal": 0.5800328340847045,
+    "random": 0.5737207919592038
+   }
+  },
+  {
+   "seed": 49,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.12732924502608417,
+     "silhouette_unweighted": 0.09790041737332991,
+     "within_group_distance": 0.1173121079881304,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.021598639455782307,
+      "primary_support_goal": 0.07588435374149659,
+      "age_band": 0.15867772108843536,
+      "condition_duration_band": 0.21374376417233562,
+      "gender": 0.19191043083900225,
+      "engagement_level": 0.2828486394557823
+     },
+     "cohesion_index": 0.8745810423962953,
+     "unmatched_rate": 0.018333333333333333,
+     "n_groups": 420
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.06924055981467475,
+     "silhouette_unweighted": 0.13810528765862903,
+     "within_group_distance": 0.13948976179150244,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.03625283446712018,
+      "primary_support_goal": 0.17441043083900226,
+      "age_band": 0.20009637188208618,
+      "condition_duration_band": 0.237015873015873,
+      "gender": 0.059433106575963714,
+      "engagement_level": 0.1662414965986394
+     },
+     "cohesion_index": 0.8577247594646543,
+     "unmatched_rate": 0.018333333333333333,
+     "n_groups": 420
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.23945480871781272,
+     "silhouette_unweighted": -0.22186993622680398,
+     "within_group_distance": 0.3866687261260971,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21596938775510205,
+      "primary_support_goal": 0.7935147392290249,
+      "age_band": 0.014933390022675736,
+      "condition_duration_band": 0.38399773242630386,
+      "gender": 0.5018140589569161,
+      "engagement_level": 0.3867148526077097
+     },
+     "cohesion_index": 0.6442989753663289,
+     "unmatched_rate": 0.018333333333333333,
+     "n_groups": 420
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23312692469158872,
+     "silhouette_unweighted": -0.2234555939662678,
+     "within_group_distance": 0.2473542735925425,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21475056689342403,
+      "primary_support_goal": 0.056887755102040805,
+      "age_band": 0.30731717687074833,
+      "condition_duration_band": 0.3869195011337869,
+      "gender": 0.5017460317460316,
+      "engagement_level": 0.38656179138321994
+     },
+     "cohesion_index": 0.7519333282578464,
+     "unmatched_rate": 0.018333333333333333,
+     "n_groups": 420
+    },
+    "random": {
+     "silhouette_weighted": -0.29640100335914904,
+     "silhouette_unweighted": -0.2739449118027106,
+     "within_group_distance": 0.4364366525658634,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21744897959183673,
+      "primary_support_goal": 0.7904024943310658,
+      "age_band": 0.3053939909297052,
+      "condition_duration_band": 0.38477551020408157,
+      "gender": 0.5060657596371881,
+      "engagement_level": 0.38596655328798185
+     },
+     "cohesion_index": 0.6079678427455169,
+     "unmatched_rate": 0.018333333333333333,
+     "n_groups": 420
+    }
+   },
+   "seconds": {
+    "weighted_gower": 25.906337040942162,
+    "unweighted_gower": 19.896150166052394,
+    "single_age_band": 0.547740500071086,
+    "single_primary_support_goal": 0.49165245902258903,
+    "random": 0.5399673749925569
+   }
+  },
+  {
+   "seed": 50,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.12882140659933328,
+     "silhouette_unweighted": 0.09855830832294002,
+     "within_group_distance": 0.11413712628263477,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.01717565886211967,
+      "primary_support_goal": 0.07457866757154169,
+      "age_band": 0.16024912340233005,
+      "condition_duration_band": 0.20733514308336165,
+      "gender": 0.19440108585001692,
+      "engagement_level": 0.2673424951928514
+     },
+     "cohesion_index": 0.8760130322337577,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.047410286744230985,
+     "silhouette_unweighted": 0.13443724609976357,
+     "within_group_distance": 0.140218949528479,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.04286279832598122,
+      "primary_support_goal": 0.1755005089921954,
+      "age_band": 0.20295781020246578,
+      "condition_duration_band": 0.23078271688722998,
+      "gender": 0.06629906119217283,
+      "engagement_level": 0.14480545187196017
+     },
+     "cohesion_index": 0.8552482879887885,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.2500928088376611,
+     "silhouette_unweighted": -0.22877169186211618,
+     "within_group_distance": 0.3805925501864877,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2080646985635109,
+      "primary_support_goal": 0.7890001131093766,
+      "age_band": 0.013918108811220449,
+      "condition_duration_band": 0.376440447913132,
+      "gender": 0.5023074312860535,
+      "engagement_level": 0.3665733514308336
+     },
+     "cohesion_index": 0.6495253879573115,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23402693458390142,
+     "silhouette_unweighted": -0.2242495577683764,
+     "within_group_distance": 0.23924496755449798,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20497115710892433,
+      "primary_support_goal": 0.04748331636692682,
+      "age_band": 0.3092919353014365,
+      "condition_duration_band": 0.3767718583870603,
+      "gender": 0.4993269992082343,
+      "engagement_level": 0.36398031896844246
+     },
+     "cohesion_index": 0.7584898231501419,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.29044814429186566,
+     "silhouette_unweighted": -0.2723757220962875,
+     "within_group_distance": 0.4332013611690633,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2039248953738265,
+      "primary_support_goal": 0.7989254609207102,
+      "age_band": 0.3111794480262414,
+      "condition_duration_band": 0.3788779549824681,
+      "gender": 0.4982185273159144,
+      "engagement_level": 0.3698252460128944
+     },
+     "cohesion_index": 0.6092868677236072,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 18.505770458024926,
+    "unweighted_gower": 19.623942791949958,
+    "single_age_band": 0.48220224992837757,
+    "single_primary_support_goal": 0.5277081249514595,
+    "random": 0.5855666249990463
+   }
+  },
+  {
+   "seed": 51,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.12720105553062197,
+     "silhouette_unweighted": 0.10047513883531639,
+     "within_group_distance": 0.11768983895413195,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.020342721411605022,
+      "primary_support_goal": 0.07961203483768804,
+      "age_band": 0.15571767899558872,
+      "condition_duration_band": 0.221530369867662,
+      "gender": 0.18385363646646308,
+      "engagement_level": 0.2793122949892546
+     },
+     "cohesion_index": 0.8755620276013472,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.06668490645341733,
+     "silhouette_unweighted": 0.1475737325431605,
+     "within_group_distance": 0.14057006189259463,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.04635787806809184,
+      "primary_support_goal": 0.1698167628096369,
+      "age_band": 0.20605559325868114,
+      "condition_duration_band": 0.2293892093654564,
+      "gender": 0.05455830788372356,
+      "engagement_level": 0.16330731817667682
+     },
+     "cohesion_index": 0.8575665247971971,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.24002283695872098,
+     "silhouette_unweighted": -0.2193787255893027,
+     "within_group_distance": 0.3828194296962187,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20793462278022848,
+      "primary_support_goal": 0.7890397013912454,
+      "age_band": 0.014616559212758737,
+      "condition_duration_band": 0.38326094333220223,
+      "gender": 0.5119047619047619,
+      "engagement_level": 0.3732241827847529
+     },
+     "cohesion_index": 0.6497128984577202,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23104903141518957,
+     "silhouette_unweighted": -0.2234736783418032,
+     "within_group_distance": 0.244367240753249,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20493722429589412,
+      "primary_support_goal": 0.058788598574821854,
+      "age_band": 0.3068996719828074,
+      "condition_duration_band": 0.38610451306413296,
+      "gender": 0.5040380047505937,
+      "engagement_level": 0.3774912340233005
+     },
+     "cohesion_index": 0.7558932643357575,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.2948366133047711,
+     "silhouette_unweighted": -0.26587736051395,
+     "within_group_distance": 0.4309342548328092,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20445650944463295,
+      "primary_support_goal": 0.7846454021038344,
+      "age_band": 0.30548297703879657,
+      "condition_duration_band": 0.38551747539871056,
+      "gender": 0.5072559665196243,
+      "engagement_level": 0.3787495758398371
+     },
+     "cohesion_index": 0.6115181371823885,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 17.163914667093195,
+    "unweighted_gower": 18.409596207900904,
+    "single_age_band": 0.5364724580431357,
+    "single_primary_support_goal": 0.5755218750564381,
+    "random": 0.46535537496674806
+   }
+  },
+  {
+   "seed": 52,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.14296259709787576,
+     "silhouette_unweighted": 0.10640676677776789,
+     "within_group_distance": 0.11563836601192297,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.020381627828436336,
+      "primary_support_goal": 0.07159180457052797,
+      "age_band": 0.16788106495553304,
+      "condition_duration_band": 0.2013171225937183,
+      "gender": 0.19141618822469886,
+      "engagement_level": 0.2830096814139367
+     },
+     "cohesion_index": 0.8744168103990199,
+     "unmatched_rate": 0.012333333333333333,
+     "n_groups": 423
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.06153027503690965,
+     "silhouette_unweighted": 0.13848875215478015,
+     "within_group_distance": 0.14258184133542098,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.03987954519869414,
+      "primary_support_goal": 0.18704266576607004,
+      "age_band": 0.20579336935719916,
+      "condition_duration_band": 0.22729145558932792,
+      "gender": 0.060672070246538326,
+      "engagement_level": 0.15406394236181467
+     },
+     "cohesion_index": 0.8529549812944651,
+     "unmatched_rate": 0.012333333333333333,
+     "n_groups": 423
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.24096988308398562,
+     "silhouette_unweighted": -0.22558594124686457,
+     "within_group_distance": 0.3845985964518528,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21035123269165823,
+      "primary_support_goal": 0.7915400202634246,
+      "age_band": 0.017651694247438926,
+      "condition_duration_band": 0.38448947427670827,
+      "gender": 0.5015366430260046,
+      "engagement_level": 0.3800855566813014
+     },
+     "cohesion_index": 0.6445631218098512,
+     "unmatched_rate": 0.012333333333333333,
+     "n_groups": 423
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23278671325707234,
+     "silhouette_unweighted": -0.2221089648020195,
+     "within_group_distance": 0.24816180469659732,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21322751322751324,
+      "primary_support_goal": 0.05418214567150737,
+      "age_band": 0.3195401328380052,
+      "condition_duration_band": 0.3877496341326128,
+      "gender": 0.5059551953168974,
+      "engagement_level": 0.37850106945851625
+     },
+     "cohesion_index": 0.7480514601132134,
+     "unmatched_rate": 0.012333333333333333,
+     "n_groups": 423
+    },
+    "random": {
+     "silhouette_weighted": -0.3000599081698493,
+     "silhouette_unweighted": -0.2754069483788566,
+     "within_group_distance": 0.43458426960523017,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20563435776201733,
+      "primary_support_goal": 0.7864347630305077,
+      "age_band": 0.3203759990994034,
+      "condition_duration_band": 0.3909591354272206,
+      "gender": 0.5042159180457052,
+      "engagement_level": 0.3751069458516267
+     },
+     "cohesion_index": 0.6071219794424491,
+     "unmatched_rate": 0.012333333333333333,
+     "n_groups": 423
+    }
+   },
+   "seconds": {
+    "weighted_gower": 18.782925125095062,
+    "unweighted_gower": 20.812657541013323,
+    "single_age_band": 0.9376279169227928,
+    "single_primary_support_goal": 1.140787750016898,
+    "random": 0.8251989160198718
+   }
+  },
+  {
+   "seed": 53,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.13328701036948684,
+     "silhouette_unweighted": 0.09994172926728173,
+     "within_group_distance": 0.11503931821985108,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.017441465897522906,
+      "primary_support_goal": 0.07306300192285942,
+      "age_band": 0.16258483203257545,
+      "condition_duration_band": 0.21171134487048976,
+      "gender": 0.19708743354824115,
+      "engagement_level": 0.26732552878633636
+     },
+     "cohesion_index": 0.8761654880481443,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.060089904455772065,
+     "silhouette_unweighted": 0.14499961363638364,
+     "within_group_distance": 0.14222109254083506,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.04998868906232327,
+      "primary_support_goal": 0.18202692003167062,
+      "age_band": 0.19903574256305848,
+      "condition_duration_band": 0.22427892772310826,
+      "gender": 0.06673453229272706,
+      "engagement_level": 0.14280907137201673
+     },
+     "cohesion_index": 0.8540230290722876,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.2557185132865559,
+     "silhouette_unweighted": -0.23015597483927885,
+     "within_group_distance": 0.3825928933057447,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20494853523357087,
+      "primary_support_goal": 0.7909512498586133,
+      "age_band": 0.013864381857255964,
+      "condition_duration_band": 0.38707612261056445,
+      "gender": 0.50737473136523,
+      "engagement_level": 0.3738151792783621
+     },
+     "cohesion_index": 0.6492164271653407,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23326944404869104,
+     "silhouette_unweighted": -0.22750724907775308,
+     "within_group_distance": 0.24482307109560647,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20565546883836666,
+      "primary_support_goal": 0.05627191494174867,
+      "age_band": 0.3076900237529691,
+      "condition_duration_band": 0.39168985408890394,
+      "gender": 0.5039927609998869,
+      "engagement_level": 0.3770387965162312
+     },
+     "cohesion_index": 0.7518392238521602,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.3081982044024648,
+     "silhouette_unweighted": -0.2797814494459332,
+     "within_group_distance": 0.4333618079647793,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2104343400067865,
+      "primary_support_goal": 0.7838875692794932,
+      "age_band": 0.30734928175545756,
+      "condition_duration_band": 0.3890973871733967,
+      "gender": 0.507188100893564,
+      "engagement_level": 0.37997964031218184
+     },
+     "cohesion_index": 0.6076638333435321,
+     "unmatched_rate": 0.017333333333333333,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 18.870652541983873,
+    "unweighted_gower": 20.258605625014752,
+    "single_age_band": 0.8435486250091344,
+    "single_primary_support_goal": 1.1449919159058481,
+    "random": 0.7634222499327734
+   }
+  },
+  {
+   "seed": 54,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.15273433963108501,
+     "silhouette_unweighted": 0.11877579224907424,
+     "within_group_distance": 0.11509080067820429,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.02094785657731026,
+      "primary_support_goal": 0.07114014251781473,
+      "age_band": 0.1620546318289786,
+      "condition_duration_band": 0.21225313878520527,
+      "gender": 0.1780398145006221,
+      "engagement_level": 0.28017475398710545
+     },
+     "cohesion_index": 0.8759974112520799,
+     "unmatched_rate": 0.016,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.04992081487455121,
+     "silhouette_unweighted": 0.1331659094450923,
+     "within_group_distance": 0.1447207422704727,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.05460920710326885,
+      "primary_support_goal": 0.1754269878972967,
+      "age_band": 0.20541652527994572,
+      "condition_duration_band": 0.2272684085510689,
+      "gender": 0.06792783621762244,
+      "engagement_level": 0.16061814274403344
+     },
+     "cohesion_index": 0.8534646071290126,
+     "unmatched_rate": 0.016,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.23998552992245206,
+     "silhouette_unweighted": -0.22344735752572498,
+     "within_group_distance": 0.3863668049074959,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2221581269087207,
+      "primary_support_goal": 0.7856633864947404,
+      "age_band": 0.016895713154620517,
+      "condition_duration_band": 0.38525393055084267,
+      "gender": 0.5022904648795384,
+      "engagement_level": 0.37829996606718697
+     },
+     "cohesion_index": 0.6475514168248462,
+     "unmatched_rate": 0.016,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.2319722473296354,
+     "silhouette_unweighted": -0.22100746612503153,
+     "within_group_distance": 0.2476327324709903,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2147607736681371,
+      "primary_support_goal": 0.05991403687365682,
+      "age_band": 0.3065221694378464,
+      "condition_duration_band": 0.38682275760660556,
+      "gender": 0.5053217961769031,
+      "engagement_level": 0.3780426422350413
+     },
+     "cohesion_index": 0.7522283311727136,
+     "unmatched_rate": 0.016,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.29619031679248653,
+     "silhouette_unweighted": -0.27031793643380153,
+     "within_group_distance": 0.4376142943640012,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.22179617690306522,
+      "primary_support_goal": 0.7916185951815407,
+      "age_band": 0.3050079176563737,
+      "condition_duration_band": 0.3879470648116729,
+      "gender": 0.5035516344304942,
+      "engagement_level": 0.3777711797307996
+     },
+     "cohesion_index": 0.6081173136245714,
+     "unmatched_rate": 0.016,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 30.158403625013307,
+    "unweighted_gower": 23.79564191692043,
+    "single_age_band": 0.5258004160132259,
+    "single_primary_support_goal": 0.496644250000827,
+    "random": 0.503232958028093
+   }
+  },
+  {
+   "seed": 55,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.12865629955512967,
+     "silhouette_unweighted": 0.10530735685700056,
+     "within_group_distance": 0.11812171651269636,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.022135505033367267,
+      "primary_support_goal": 0.08846849903857029,
+      "age_band": 0.16384175998190248,
+      "condition_duration_band": 0.201014591109603,
+      "gender": 0.17079515891867433,
+      "engagement_level": 0.2808845153263205
+     },
+     "cohesion_index": 0.8730119378205046,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.07331678383145906,
+     "silhouette_unweighted": 0.14419151432332675,
+     "within_group_distance": 0.13818835024562337,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.04509670851713607,
+      "primary_support_goal": 0.1641612939712702,
+      "age_band": 0.2031274742676168,
+      "condition_duration_band": 0.22049202578893792,
+      "gender": 0.06929645967650717,
+      "engagement_level": 0.1654733627417713
+     },
+     "cohesion_index": 0.8563695190434164,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.24910552101748273,
+     "silhouette_unweighted": -0.22998586051603398,
+     "within_group_distance": 0.3859461597136513,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21654224635222258,
+      "primary_support_goal": 0.793230403800475,
+      "age_band": 0.013865795724465557,
+      "condition_duration_band": 0.38649813369528335,
+      "gender": 0.4991743015495983,
+      "engagement_level": 0.37552030313312973
+     },
+     "cohesion_index": 0.6460310033198321,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.2339115850189053,
+     "silhouette_unweighted": -0.2224891609665433,
+     "within_group_distance": 0.24904007760480726,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.22228254722316476,
+      "primary_support_goal": 0.05925800248840629,
+      "age_band": 0.301288033027938,
+      "condition_duration_band": 0.3872503110507861,
+      "gender": 0.5068827055762921,
+      "engagement_level": 0.38016344304942873
+     },
+     "cohesion_index": 0.7514539777904239,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.29800686742039406,
+     "silhouette_unweighted": -0.2735243755739387,
+     "within_group_distance": 0.438690974909462,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.22100441126569392,
+      "primary_support_goal": 0.7968272819816762,
+      "age_band": 0.3029747766089809,
+      "condition_duration_band": 0.39138219658409684,
+      "gender": 0.5048354258568035,
+      "engagement_level": 0.37397636014025554
+     },
+     "cohesion_index": 0.6052001781915929,
+     "unmatched_rate": 0.015666666666666666,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 28.942206792067736,
+    "unweighted_gower": 22.65223591704853,
+    "single_age_band": 0.5062936249887571,
+    "single_primary_support_goal": 0.5085377090144902,
+    "random": 0.4970095830503851
+   }
+  },
+  {
+   "seed": 56,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.13113531854006227,
+     "silhouette_unweighted": 0.09590275143694359,
+     "within_group_distance": 0.11447831373813543,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.014099966227625802,
+      "primary_support_goal": 0.07962962962962962,
+      "age_band": 0.15658842733310815,
+      "condition_duration_band": 0.20674209163570867,
+      "gender": 0.18884385905662499,
+      "engagement_level": 0.28176854666216367
+     },
+     "cohesion_index": 0.8767103812735545,
+     "unmatched_rate": 0.015,
+     "n_groups": 423
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.0528592965447646,
+     "silhouette_unweighted": 0.14023892864923032,
+     "within_group_distance": 0.1409042215083029,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.050630417651694244,
+      "primary_support_goal": 0.17242485646740965,
+      "age_band": 0.20876533828661484,
+      "condition_duration_band": 0.2189553078914781,
+      "gender": 0.05052347180006754,
+      "engagement_level": 0.15989812000450299
+     },
+     "cohesion_index": 0.8561749704638195,
+     "unmatched_rate": 0.015,
+     "n_groups": 423
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.2423689224635825,
+     "silhouette_unweighted": -0.21978821254874695,
+     "within_group_distance": 0.3867917308406883,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21622762580209387,
+      "primary_support_goal": 0.7936564223798267,
+      "age_band": 0.014972419227738374,
+      "condition_duration_band": 0.3847630305077113,
+      "gender": 0.511527637059552,
+      "engagement_level": 0.37555442980974896
+     },
+     "cohesion_index": 0.6451430482222409,
+     "unmatched_rate": 0.015,
+     "n_groups": 423
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23932750839626277,
+     "silhouette_unweighted": -0.22746821906027268,
+     "within_group_distance": 0.24660470018997993,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21641900258921534,
+      "primary_support_goal": 0.05668693009118541,
+      "age_band": 0.3026806822019588,
+      "condition_duration_band": 0.38674772036474164,
+      "gender": 0.5059664527749633,
+      "engagement_level": 0.377361251829337
+     },
+     "cohesion_index": 0.7535542036137284,
+     "unmatched_rate": 0.015,
+     "n_groups": 423
+    },
+    "random": {
+     "silhouette_weighted": -0.2875379439054959,
+     "silhouette_unweighted": -0.271850906640012,
+     "within_group_distance": 0.4332941799296924,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21591804570527973,
+      "primary_support_goal": 0.7850669818754925,
+      "age_band": 0.30585950692333674,
+      "condition_duration_band": 0.3862512664640324,
+      "gender": 0.4931554654958909,
+      "engagement_level": 0.3761341889001463
+     },
+     "cohesion_index": 0.6108974624222975,
+     "unmatched_rate": 0.015,
+     "n_groups": 423
+    }
+   },
+   "seconds": {
+    "weighted_gower": 30.233162624994293,
+    "unweighted_gower": 20.570107875042595,
+    "single_age_band": 0.5415954169584438,
+    "single_primary_support_goal": 0.754643207998015,
+    "random": 0.7154495830181986
+   }
+  },
+  {
+   "seed": 57,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.15345477365924073,
+     "silhouette_unweighted": 0.11230370931432633,
+     "within_group_distance": 0.1083046529908559,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.01572112098427888,
+      "primary_support_goal": 0.05910230120756436,
+      "age_band": 0.14990174299384823,
+      "condition_duration_band": 0.19804283435862385,
+      "gender": 0.19991455912508543,
+      "engagement_level": 0.28516176805650484
+     },
+     "cohesion_index": 0.8789036199522801,
+     "unmatched_rate": 0.022333333333333334,
+     "n_groups": 418
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.05634285017731452,
+     "silhouette_unweighted": 0.14207430168457372,
+     "within_group_distance": 0.13921377250002936,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.046508316245158346,
+      "primary_support_goal": 0.17167350193665984,
+      "age_band": 0.20087434495329234,
+      "condition_duration_band": 0.2205206197311461,
+      "gender": 0.072220323536113,
+      "engagement_level": 0.149544315333789
+     },
+     "cohesion_index": 0.8554033425382107,
+     "unmatched_rate": 0.022333333333333334,
+     "n_groups": 418
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.23925243694656634,
+     "silhouette_unweighted": -0.22871565072149624,
+     "within_group_distance": 0.38089188174527705,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20453975848712688,
+      "primary_support_goal": 0.787138300296195,
+      "age_band": 0.01168403964456596,
+      "condition_duration_band": 0.3941091364775576,
+      "gender": 0.4980804283435862,
+      "engagement_level": 0.3658122579175211
+     },
+     "cohesion_index": 0.6495134666584197,
+     "unmatched_rate": 0.022333333333333334,
+     "n_groups": 418
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.23986323863484585,
+     "silhouette_unweighted": -0.23255292564191363,
+     "within_group_distance": 0.24460155450582766,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2104237867395762,
+      "primary_support_goal": 0.05194235588972431,
+      "age_band": 0.30593956482114376,
+      "condition_duration_band": 0.3957142857142857,
+      "gender": 0.5055650489861016,
+      "engagement_level": 0.36502335383914325
+     },
+     "cohesion_index": 0.7522221251889426,
+     "unmatched_rate": 0.022333333333333334,
+     "n_groups": 418
+    },
+    "random": {
+     "silhouette_weighted": -0.28681538482097146,
+     "silhouette_unweighted": -0.27360369637013676,
+     "within_group_distance": 0.43147419724509634,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.206909318751424,
+      "primary_support_goal": 0.7853155616313511,
+      "age_band": 0.302511961722488,
+      "condition_duration_band": 0.39566643882433356,
+      "gender": 0.4965994531784005,
+      "engagement_level": 0.3715538847117794
+     },
+     "cohesion_index": 0.6115842579241725,
+     "unmatched_rate": 0.022333333333333334,
+     "n_groups": 418
+    }
+   },
+   "seconds": {
+    "weighted_gower": 31.41092912503518,
+    "unweighted_gower": 20.29096287500579,
+    "single_age_band": 0.7621570420451462,
+    "single_primary_support_goal": 0.6313838330097497,
+    "random": 1.0494467909447849
+   }
+  },
+  {
+   "seed": 58,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.12762961573305545,
+     "silhouette_unweighted": 0.094326991980636,
+     "within_group_distance": 0.11910058903997493,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.01894582060852844,
+      "primary_support_goal": 0.08156882705576292,
+      "age_band": 0.15944039135844362,
+      "condition_duration_band": 0.2137857708404027,
+      "gender": 0.19791878746748107,
+      "engagement_level": 0.29011706820495414
+     },
+     "cohesion_index": 0.8725037192171946,
+     "unmatched_rate": 0.016666666666666666,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.05008049255057639,
+     "silhouette_unweighted": 0.13388789030030138,
+     "within_group_distance": 0.14539209094874028,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.04448026241375409,
+      "primary_support_goal": 0.18340685442823212,
+      "age_band": 0.20808873430607397,
+      "condition_duration_band": 0.23741997511593713,
+      "gender": 0.0672209026128266,
+      "engagement_level": 0.15578554462164915
+     },
+     "cohesion_index": 0.8521353560328867,
+     "unmatched_rate": 0.016666666666666666,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.23958298656332555,
+     "silhouette_unweighted": -0.22010111372677615,
+     "within_group_distance": 0.38445096733791306,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2094220110847189,
+      "primary_support_goal": 0.7897805678090714,
+      "age_band": 0.01548750141386721,
+      "condition_duration_band": 0.3823402330053161,
+      "gender": 0.5144101346001583,
+      "engagement_level": 0.38470478452663726
+     },
+     "cohesion_index": 0.6474487501341442,
+     "unmatched_rate": 0.016666666666666666,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.2326518238570796,
+     "silhouette_unweighted": -0.22027753432484215,
+     "within_group_distance": 0.24819837138256653,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2121762244090035,
+      "primary_support_goal": 0.05853410247709535,
+      "age_band": 0.3134062888813482,
+      "condition_duration_band": 0.3850152697658636,
+      "gender": 0.5069279493269991,
+      "engagement_level": 0.38676903065264107
+     },
+     "cohesion_index": 0.7509651272608142,
+     "unmatched_rate": 0.016666666666666666,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.2960528874926999,
+     "silhouette_unweighted": -0.2732709091021486,
+     "within_group_distance": 0.4366389727842902,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21179165252799453,
+      "primary_support_goal": 0.790453568600837,
+      "age_band": 0.31573068657391695,
+      "condition_duration_band": 0.3832247483316367,
+      "gender": 0.5100214907815858,
+      "engagement_level": 0.3855926931342608
+     },
+     "cohesion_index": 0.6070036430187902,
+     "unmatched_rate": 0.016666666666666666,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 24.379691625013947,
+    "unweighted_gower": 20.540189916966483,
+    "single_age_band": 0.6196188749745488,
+    "single_primary_support_goal": 0.6747774170944467,
+    "random": 0.5256329170661047
+   }
+  },
+  {
+   "seed": 59,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.1301155381558421,
+     "silhouette_unweighted": 0.10192885760168571,
+     "within_group_distance": 0.1169430686400042,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.02270408163265306,
+      "primary_support_goal": 0.08075396825396824,
+      "age_band": 0.15892006802721087,
+      "condition_duration_band": 0.2024761904761905,
+      "gender": 0.18043650793650792,
+      "engagement_level": 0.2891496598639456
+     },
+     "cohesion_index": 0.8755766258342982,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 420
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.05258028848865094,
+     "silhouette_unweighted": 0.13762115809588774,
+     "within_group_distance": 0.14245662982157462,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.048129251700680276,
+      "primary_support_goal": 0.1771485260770975,
+      "age_band": 0.21012755102040817,
+      "condition_duration_band": 0.21571428571428578,
+      "gender": 0.06456349206349206,
+      "engagement_level": 0.16381519274376416
+     },
+     "cohesion_index": 0.8563895639675645,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 420
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.23284522345391057,
+     "silhouette_unweighted": -0.21922180856115348,
+     "within_group_distance": 0.38363945861379956,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21219954648526074,
+      "primary_support_goal": 0.7860374149659866,
+      "age_band": 0.016248582766439906,
+      "condition_duration_band": 0.3814365079365079,
+      "gender": 0.5155612244897958,
+      "engagement_level": 0.37453514739229027
+     },
+     "cohesion_index": 0.6493047247240097,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 420
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.22788164498183408,
+     "silhouette_unweighted": -0.21915690484881206,
+     "within_group_distance": 0.24541282635118541,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21119047619047615,
+      "primary_support_goal": 0.05528344671201814,
+      "age_band": 0.3067233560090703,
+      "condition_duration_band": 0.3870170068027211,
+      "gender": 0.5098696145124716,
+      "engagement_level": 0.3725028344671201
+     },
+     "cohesion_index": 0.7557748613700167,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 420
+    },
+    "random": {
+     "silhouette_weighted": -0.294507320804172,
+     "silhouette_unweighted": -0.27021878947080824,
+     "within_group_distance": 0.43330423064336143,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20939909297052153,
+      "primary_support_goal": 0.7882596371882087,
+      "age_band": 0.3042247732426304,
+      "condition_duration_band": 0.3894875283446712,
+      "gender": 0.5074206349206348,
+      "engagement_level": 0.37405045351473926
+     },
+     "cohesion_index": 0.6104169075170102,
+     "unmatched_rate": 0.019666666666666666,
+     "n_groups": 420
+    }
+   },
+   "seconds": {
+    "weighted_gower": 25.072826790972613,
+    "unweighted_gower": 21.16230504203122,
+    "single_age_band": 0.5391774580348283,
+    "single_primary_support_goal": 0.5192968329647556,
+    "random": 0.6458242080407217
+   }
+  },
+  {
+   "seed": 60,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.13737305587096718,
+     "silhouette_unweighted": 0.10868113751387762,
+     "within_group_distance": 0.11765810076565997,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.01875987361769352,
+      "primary_support_goal": 0.0814488828706838,
+      "age_band": 0.16740295644324082,
+      "condition_duration_band": 0.20827916948770028,
+      "gender": 0.18301173549988714,
+      "engagement_level": 0.2778915594673888
+     },
+     "cohesion_index": 0.8753987063388142,
+     "unmatched_rate": 0.014,
+     "n_groups": 422
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.06462828636760024,
+     "silhouette_unweighted": 0.13916710944448782,
+     "within_group_distance": 0.14218142128064365,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.0448544346648612,
+      "primary_support_goal": 0.17250056420672533,
+      "age_band": 0.2121121078763259,
+      "condition_duration_band": 0.22580455879034078,
+      "gender": 0.07013089596027984,
+      "engagement_level": 0.15928966373279163
+     },
+     "cohesion_index": 0.855767152255783,
+     "unmatched_rate": 0.014,
+     "n_groups": 422
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.2395931190487444,
+     "silhouette_unweighted": -0.22539139115094106,
+     "within_group_distance": 0.38433043627121893,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20978334461746784,
+      "primary_support_goal": 0.7903802753328819,
+      "age_band": 0.015552358384111939,
+      "condition_duration_band": 0.38933197923719254,
+      "gender": 0.5097438501466937,
+      "engagement_level": 0.3699221394719025
+     },
+     "cohesion_index": 0.6487382292477388,
+     "unmatched_rate": 0.014,
+     "n_groups": 422
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.2249843475878421,
+     "silhouette_unweighted": -0.2181310362324311,
+     "within_group_distance": 0.24546072944691605,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.2060821484992101,
+      "primary_support_goal": 0.05661814488828708,
+      "age_band": 0.31285827127059357,
+      "condition_duration_band": 0.38777025502143986,
+      "gender": 0.50781990521327,
+      "engagement_level": 0.3746248025276461
+     },
+     "cohesion_index": 0.7526528809622178,
+     "unmatched_rate": 0.014,
+     "n_groups": 422
+    },
+    "random": {
+     "silhouette_weighted": -0.2866432785850343,
+     "silhouette_unweighted": -0.2669876711712273,
+     "within_group_distance": 0.43473774176347174,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.20826562852629202,
+      "primary_support_goal": 0.7857932746558339,
+      "age_band": 0.3128582712705935,
+      "condition_duration_band": 0.39007334687429474,
+      "gender": 0.5170446851726471,
+      "engagement_level": 0.3760324983073797
+     },
+     "cohesion_index": 0.6107848248011136,
+     "unmatched_rate": 0.014,
+     "n_groups": 422
+    }
+   },
+   "seconds": {
+    "weighted_gower": 22.556478708051145,
+    "unweighted_gower": 21.411746707977727,
+    "single_age_band": 0.5163865420036018,
+    "single_primary_support_goal": 0.6743830420309678,
+    "random": 0.46116491698194295
+   }
+  },
+  {
+   "seed": 61,
+   "metrics": {
+    "weighted_gower": {
+     "silhouette_weighted": 0.12017943930661558,
+     "silhouette_unweighted": 0.09113772027656084,
+     "within_group_distance": 0.1167624273278201,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.01885533310711458,
+      "primary_support_goal": 0.08112204501753194,
+      "age_band": 0.16388134826377107,
+      "condition_duration_band": 0.20267277457301208,
+      "gender": 0.18987671077932358,
+      "engagement_level": 0.2789531727180183
+     },
+     "cohesion_index": 0.8749570490069979,
+     "unmatched_rate": 0.019,
+     "n_groups": 421
+    },
+    "unweighted_gower": {
+     "silhouette_weighted": 0.049644126518061694,
+     "silhouette_unweighted": 0.1294032882369751,
+     "within_group_distance": 0.1411151842677821,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.03932813030200204,
+      "primary_support_goal": 0.17766655355728989,
+      "age_band": 0.21360705802511026,
+      "condition_duration_band": 0.22045922406967539,
+      "gender": 0.066610111978283,
+      "engagement_level": 0.15848885872638838
+     },
+     "cohesion_index": 0.8560755657946671,
+     "unmatched_rate": 0.019,
+     "n_groups": 421
+    },
+    "single_age_band": {
+     "silhouette_weighted": -0.24017071392866718,
+     "silhouette_unweighted": -0.22141673037106785,
+     "within_group_distance": 0.3837098305607264,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21259472910304264,
+      "primary_support_goal": 0.7911548467367944,
+      "age_band": 0.014070806469856352,
+      "condition_duration_band": 0.38633525619273834,
+      "gender": 0.4982863929419748,
+      "engagement_level": 0.3681936432530256
+     },
+     "cohesion_index": 0.6474497277349088,
+     "unmatched_rate": 0.019,
+     "n_groups": 421
+    },
+    "single_primary_support_goal": {
+     "silhouette_weighted": -0.22326731263620106,
+     "silhouette_unweighted": -0.21872225071648438,
+     "within_group_distance": 0.24479474870391046,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21118086189345095,
+      "primary_support_goal": 0.052923877389435575,
+      "age_band": 0.313725822870716,
+      "condition_duration_band": 0.38389209365456395,
+      "gender": 0.49595633978056763,
+      "engagement_level": 0.37573803868340677
+     },
+     "cohesion_index": 0.7530556698146428,
+     "unmatched_rate": 0.019,
+     "n_groups": 421
+    },
+    "random": {
+     "silhouette_weighted": -0.28787091640136125,
+     "silhouette_unweighted": -0.2684893201930822,
+     "within_group_distance": 0.43723182105739783,
+     "within_group_dissimilarity": {
+      "primary_condition_subtype": 0.21279832598122383,
+      "primary_support_goal": 0.7978735437167742,
+      "age_band": 0.3130584775477887,
+      "condition_duration_band": 0.3837382649021604,
+      "gender": 0.5071485126116955,
+      "engagement_level": 0.3713889831467029
+     },
+     "cohesion_index": 0.6066106320268294,
+     "unmatched_rate": 0.019,
+     "n_groups": 421
+    }
+   },
+   "seconds": {
+    "weighted_gower": 22.47079908300657,
+    "unweighted_gower": 21.892280083033256,
+    "single_age_band": 0.3933122919406742,
+    "single_primary_support_goal": 0.59984679101035,
+    "random": 0.5695324169937521
+   }
+  }
+ ],
+ "summary": {
+  "silhouette_weighted": {
+   "weighted_gower": {
+    "mean": 0.1326750250707278,
+    "sd": 0.010755359609825897
+   },
+   "unweighted_gower": {
+    "mean": 0.05600177472463561,
+    "sd": 0.008167252204996348
+   },
+   "single_age_band": {
+    "mean": -0.24370512535252717,
+    "sd": 0.0062633783017320725
+   },
+   "single_primary_support_goal": {
+    "mean": -0.2320817493503983,
+    "sd": 0.004665866824030774
+   },
+   "random": {
+    "mean": -0.29415096929231427,
+    "sd": 0.006109914678907853
+   }
+  },
+  "silhouette_unweighted": {
+   "weighted_gower": {
+    "mean": 0.10245733101029748,
+    "sd": 0.008220045807006875
+   },
+   "unweighted_gower": {
+    "mean": 0.13669744910582,
+    "sd": 0.0058613050384285405
+   },
+   "single_age_band": {
+    "mean": -0.22438157656794103,
+    "sd": 0.0036501295568995007
+   },
+   "single_primary_support_goal": {
+    "mean": -0.22357677015745375,
+    "sd": 0.004063388185220607
+   },
+   "random": {
+    "mean": -0.27299234265531663,
+    "sd": 0.0035885250388882333
+   }
+  },
+  "within_group_distance": {
+   "weighted_gower": {
+    "mean": 0.11564328756277513,
+    "sd": 0.002564462951879771
+   },
+   "unweighted_gower": {
+    "mean": 0.14119190286848485,
+    "sd": 0.0019116810139602587
+   },
+   "single_age_band": {
+    "mean": 0.3841935201845862,
+    "sd": 0.0019468420980845943
+   },
+   "single_primary_support_goal": {
+    "mean": 0.2457556361239268,
+    "sd": 0.0028181101726523767
+   },
+   "random": {
+    "mean": 0.43473569726759936,
+    "sd": 0.002874879336372335
+   }
+  },
+  "cohesion_index": {
+   "weighted_gower": {
+    "mean": 0.8754440257746865,
+    "sd": 0.0015969280895720645
+   },
+   "unweighted_gower": {
+    "mean": 0.855540518618783,
+    "sd": 0.0016075215629267686
+   },
+   "single_age_band": {
+    "mean": 0.6469402941933688,
+    "sd": 0.002242886532865511
+   },
+   "single_primary_support_goal": {
+    "mean": 0.7530035469706248,
+    "sd": 0.0025860405625964715
+   },
+   "random": {
+    "mean": 0.6091352197457715,
+    "sd": 0.0025199092107909093
+   }
+  },
+  "unmatched_rate": {
+   "weighted_gower": {
+    "mean": 0.01735,
+    "sd": 0.0026279536432131357
+   },
+   "unweighted_gower": {
+    "mean": 0.01735,
+    "sd": 0.0026279536432131357
+   },
+   "single_age_band": {
+    "mean": 0.01735,
+    "sd": 0.0026279536432131357
+   },
+   "single_primary_support_goal": {
+    "mean": 0.01735,
+    "sd": 0.0026279536432131357
+   },
+   "random": {
+    "mean": 0.01735,
+    "sd": 0.0026279536432131357
+   }
+  }
+ },
+ "tests": {
+  "silhouette_weighted": {
+   "friedman": {
+    "statistic": 79.24000000000001,
+    "p_value": 2.523437461527484e-16,
+    "kendalls_w": 0.9905000000000002,
+    "interpretation": "The methods differ (Friedman chi-square = 79.24, p < 0.001, Kendall's W = 0.99)."
+   },
+   "pairwise": [
+    {
+     "baseline": "unweighted_gower",
+     "median_difference": 0.07697746890780865,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than unweighted_gower (median difference +0.0770, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    },
+    {
+     "baseline": "single_age_band",
+     "median_difference": 0.37694922582766466,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than single_age_band (median difference +0.3769, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    },
+    {
+     "baseline": "single_primary_support_goal",
+     "median_difference": 0.36270811287863486,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than single_primary_support_goal (median difference +0.3627, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    },
+    {
+     "baseline": "random",
+     "median_difference": 0.423920066694111,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than random (median difference +0.4239, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    }
+   ],
+   "note": ""
+  },
+  "silhouette_unweighted": {
+   "friedman": {
+    "statistic": 76.04000000000002,
+    "p_value": 1.2006351760182991e-15,
+    "kendalls_w": 0.9505000000000002,
+    "interpretation": "The methods differ (Friedman chi-square = 76.04, p < 0.001, Kendall's W = 0.95)."
+   },
+   "pairwise": [
+    {
+     "baseline": "unweighted_gower",
+     "median_difference": -0.03550379736420475,
+     "rank_biserial": -1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is worse than unweighted_gower (median difference -0.0355, Holm-adjusted p < 0.001, rank-biserial r = -1.00, large effect)."
+    },
+    {
+     "baseline": "single_age_band",
+     "median_difference": 0.3287138521458084,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than single_age_band (median difference +0.3287, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    },
+    {
+     "baseline": "single_primary_support_goal",
+     "median_difference": 0.32631630022178115,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than single_primary_support_goal (median difference +0.3263, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    },
+    {
+     "baseline": "random",
+     "median_difference": 0.37471182980148826,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than random (median difference +0.3747, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    }
+   ],
+   "note": ""
+  },
+  "within_group_distance": {
+   "friedman": {
+    "statistic": 80.0,
+    "p_value": 1.7418252446695558e-16,
+    "kendalls_w": 1.0,
+    "interpretation": "The methods differ (Friedman chi-square = 80.00, p < 0.001, Kendall's W = 1.00)."
+   },
+   "pairwise": [
+    {
+     "baseline": "unweighted_gower",
+     "median_difference": -0.025855684596141827,
+     "rank_biserial": -1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than unweighted_gower (median difference -0.0259, Holm-adjusted p < 0.001, rank-biserial r = -1.00, large effect)."
+    },
+    {
+     "baseline": "single_age_band",
+     "median_difference": -0.26795649126209253,
+     "rank_biserial": -1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than single_age_band (median difference -0.2680, Holm-adjusted p < 0.001, rank-biserial r = -1.00, large effect)."
+    },
+    {
+     "baseline": "single_primary_support_goal",
+     "median_difference": -0.13047027231732364,
+     "rank_biserial": -1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than single_primary_support_goal (median difference -0.1305, Holm-adjusted p < 0.001, rank-biserial r = -1.00, large effect)."
+    },
+    {
+     "baseline": "random",
+     "median_difference": -0.31909223689076,
+     "rank_biserial": -1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than random (median difference -0.3191, Holm-adjusted p < 0.001, rank-biserial r = -1.00, large effect)."
+    }
+   ],
+   "note": ""
+  },
+  "cohesion_index": {
+   "friedman": {
+    "statistic": 80.0,
+    "p_value": 1.7418252446695558e-16,
+    "kendalls_w": 1.0,
+    "interpretation": "The methods differ (Friedman chi-square = 80.00, p < 0.001, Kendall's W = 1.00)."
+   },
+   "pairwise": [
+    {
+     "baseline": "unweighted_gower",
+     "median_difference": 0.020061839893106004,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than unweighted_gower (median difference +0.0201, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    },
+    {
+     "baseline": "single_age_band",
+     "median_difference": 0.22768257644051282,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than single_age_band (median difference +0.2277, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    },
+    {
+     "baseline": "single_primary_support_goal",
+     "median_difference": 0.12269676975752264,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than single_primary_support_goal (median difference +0.1227, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    },
+    {
+     "baseline": "random",
+     "median_difference": 0.2666696820804645,
+     "rank_biserial": 1.0,
+     "p_value": 1.9073486328125e-06,
+     "p_holm": 7.62939453125e-06,
+     "effect_size": "large",
+     "interpretation": "weighted_gower is better than random (median difference +0.2667, Holm-adjusted p < 0.001, rank-biserial r = 1.00, large effect)."
+    }
+   ],
+   "note": ""
+  },
+  "unmatched_rate": {
+   "friedman": null,
+   "pairwise": [],
+   "note": "All methods have identical values within every replicate; no test is needed."
+  }
+ },
+ "within_group_dissimilarity": {
+  "weighted_gower": {
+   "primary_condition_subtype": 0.019345311730834515,
+   "primary_support_goal": 0.07638018104339375,
+   "age_band": 0.1611229427134035,
+   "condition_duration_band": 0.20687575059569197,
+   "gender": 0.1868247004090029,
+   "engagement_level": 0.2796636082043339
+  },
+  "unweighted_gower": {
+   "primary_condition_subtype": 0.044313937013151436,
+   "primary_support_goal": 0.17550725882828813,
+   "age_band": 0.20618188917400224,
+   "condition_duration_band": 0.22554701870363716,
+   "gender": 0.06585681841707364,
+   "engagement_level": 0.15578406485388202
+  },
+  "single_age_band": {
+   "primary_condition_subtype": 0.21247954109974673,
+   "primary_support_goal": 0.7890759799814774,
+   "age_band": 0.01476665908505841,
+   "condition_duration_band": 0.3858873877150931,
+   "gender": 0.5051018231815896,
+   "engagement_level": 0.3753342219316854
+  },
+  "single_primary_support_goal": {
+   "primary_condition_subtype": 0.21226597304545072,
+   "primary_support_goal": 0.05530640026920515,
+   "age_band": 0.3084500490226896,
+   "condition_duration_band": 0.38645589142191,
+   "gender": 0.5034895491841131,
+   "engagement_level": 0.3762740069889758
+  },
+  "random": {
+   "primary_condition_subtype": 0.2120297296773912,
+   "primary_support_goal": 0.7893675511935669,
+   "age_band": 0.30855967809454343,
+   "condition_duration_band": 0.3873580676428208,
+   "gender": 0.5041302729042336,
+   "engagement_level": 0.37672463509651377
+  }
+ },
+ "sensitivity": {
+  "seed": 42,
+  "perturbation": 0.1,
+  "perturbations": [
+   {
+    "attribute": "primary_condition_subtype",
+    "direction": "+10%",
+    "weight": 0.23916391639163917,
+    "ari": 0.7040313619605171,
+    "within_group_distance": 0.11168725246846022
+   },
+   {
+    "attribute": "primary_condition_subtype",
+    "direction": "-10%",
+    "weight": 0.19567956795679567,
+    "ari": 0.6402263219820863,
+    "within_group_distance": 0.11649143400788284
+   },
+   {
+    "attribute": "primary_support_goal",
+    "direction": "+10%",
+    "weight": 0.2152915291529153,
+    "ari": 0.569801081075661,
+    "within_group_distance": 0.11488102145432305
+   },
+   {
+    "attribute": "primary_support_goal",
+    "direction": "-10%",
+    "weight": 0.17614761476147614,
+    "ari": 0.512273817839294,
+    "within_group_distance": 0.11434340947647897
+   },
+   {
+    "attribute": "support_orientation",
+    "direction": "+10%",
+    "weight": 0.14345434543454344,
+    "ari": 0.4630788764605755,
+    "within_group_distance": 0.11346228757889418
+   },
+   {
+    "attribute": "support_orientation",
+    "direction": "-10%",
+    "weight": 0.11737173717371736,
+    "ari": 0.4718677638994649,
+    "within_group_distance": 0.11223262584914792
+   },
+   {
+    "attribute": "age_band",
+    "direction": "+10%",
+    "weight": 0.14345434543454344,
+    "ari": 0.45988291739188847,
+    "within_group_distance": 0.1143035559299079
+   },
+   {
+    "attribute": "age_band",
+    "direction": "-10%",
+    "weight": 0.11737173717371736,
+    "ari": 0.48830412482414115,
+    "within_group_distance": 0.1117358439827035
+   },
+   {
+    "attribute": "condition_duration_band",
+    "direction": "+10%",
+    "weight": 0.11958195819581958,
+    "ari": 0.4703839257604316,
+    "within_group_distance": 0.11393415102195803
+   },
+   {
+    "attribute": "condition_duration_band",
+    "direction": "-10%",
+    "weight": 0.09783978397839783,
+    "ari": 0.45166473692955034,
+    "within_group_distance": 0.11309186549663679
+   },
+   {
+    "attribute": "psychosocial_isolation_score",
+    "direction": "+10%",
+    "weight": 0.11958195819581958,
+    "ari": 0.4888748318006924,
+    "within_group_distance": 0.11403044891282835
+   },
+   {
+    "attribute": "psychosocial_isolation_score",
+    "direction": "-10%",
+    "weight": 0.09783978397839783,
+    "ari": 0.47449301599160065,
+    "within_group_distance": 0.11208513997081482
+   },
+   {
+    "attribute": "gender",
+    "direction": "+10%",
+    "weight": 0.05973597359735974,
+    "ari": 0.45280615088265286,
+    "within_group_distance": 0.11367956557842206
+   },
+   {
+    "attribute": "gender",
+    "direction": "-10%",
+    "weight": 0.048874887488748874,
+    "ari": 0.477803116455598,
+    "within_group_distance": 0.11477735961191347
+   },
+   {
+    "attribute": "engagement_level",
+    "direction": "+10%",
+    "weight": 0.05973597359735974,
+    "ari": 0.4683293806448471,
+    "within_group_distance": 0.11247831416565925
+   },
+   {
+    "attribute": "engagement_level",
+    "direction": "-10%",
+    "weight": 0.048874887488748874,
+    "ari": 0.4951526085427563,
+    "within_group_distance": 0.11181649962385935
+   }
+  ],
+  "ranking": [
+   {
+    "attribute": "condition_duration_band",
+    "original_weight": 0.10871087108710871,
+    "ari_plus": 0.4703839257604316,
+    "ari_minus": 0.45166473692955034,
+    "mean_change": 0.538975668655009
+   },
+   {
+    "attribute": "gender",
+    "original_weight": 0.054305430543054305,
+    "ari_plus": 0.45280615088265286,
+    "ari_minus": 0.477803116455598,
+    "mean_change": 0.5346953663308746
+   },
+   {
+    "attribute": "support_orientation",
+    "original_weight": 0.1304130413041304,
+    "ari_plus": 0.4630788764605755,
+    "ari_minus": 0.4718677638994649,
+    "mean_change": 0.5325266798199798
+   },
+   {
+    "attribute": "age_band",
+    "original_weight": 0.1304130413041304,
+    "ari_plus": 0.45988291739188847,
+    "ari_minus": 0.48830412482414115,
+    "mean_change": 0.5259064788919852
+   },
+   {
+    "attribute": "psychosocial_isolation_score",
+    "original_weight": 0.10871087108710871,
+    "ari_plus": 0.4888748318006924,
+    "ari_minus": 0.47449301599160065,
+    "mean_change": 0.5183160761038534
+   },
+   {
+    "attribute": "engagement_level",
+    "original_weight": 0.054305430543054305,
+    "ari_plus": 0.4683293806448471,
+    "ari_minus": 0.4951526085427563,
+    "mean_change": 0.5182590054061983
+   },
+   {
+    "attribute": "primary_support_goal",
+    "original_weight": 0.19571957195719572,
+    "ari_plus": 0.569801081075661,
+    "ari_minus": 0.512273817839294,
+    "mean_change": 0.45896255054252255
+   },
+   {
+    "attribute": "primary_condition_subtype",
+    "original_weight": 0.21742174217421742,
+    "ari_plus": 0.7040313619605171,
+    "ari_minus": 0.6402263219820863,
+    "mean_change": 0.3278711580286984
+   }
+  ],
+  "seed_reference_ari": 0.3730623994632096,
+  "base_within_group_distance": 0.1130068471307205,
+  "seed_reference_within_group_distance": 0.11252237776025235
+ },
+ "runtime_seconds": 354.5154806660721
+}

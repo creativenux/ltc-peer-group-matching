@@ -1,0 +1,11 @@
+﻿Rank,Attribute,Weight,ARI (+10%),ARI (-10%),Mean change,Within-group distance (+10%),Within-group distance (-10%)
+1,time lived with the condition,0.1087,0.4704,0.4517,0.539,0.1139,0.1131
+2,gender,0.0543,0.4528,0.4778,0.5347,0.1137,0.1148
+3,support orientation,0.1304,0.4631,0.4719,0.5325,0.1135,0.1122
+4,age band,0.1304,0.4599,0.4883,0.5259,0.1143,0.1117
+5,isolation level,0.1087,0.4889,0.4745,0.5183,0.114,0.1121
+6,engagement level,0.0543,0.4683,0.4952,0.5183,0.1125,0.1118
+7,support goal,0.1957,0.5698,0.5123,0.459,0.1149,0.1143
+8,condition sub-type,0.2174,0.704,0.6402,0.3279,0.1117,0.1165
+,Reference: seed change only,,0.3731,,,0.1125,
+,Reference: original grouping,,,,,0.113,

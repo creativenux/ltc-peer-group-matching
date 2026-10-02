@@ -1,0 +1,7 @@
+﻿Attribute,Weighted Gower (full method),Unweighted Gower,Single attribute: age band,Single attribute: support goal,Random
+condition sub-type,0.0193,0.0443,0.2125,0.2123,0.212
+support goal,0.0764,0.1755,0.7891,0.0553,0.7894
+age band,0.1611,0.2062,0.0148,0.3085,0.3086
+time lived with the condition,0.2069,0.2255,0.3859,0.3865,0.3874
+gender,0.1868,0.0659,0.5051,0.5035,0.5041
+engagement level,0.2797,0.1558,0.3753,0.3763,0.3767

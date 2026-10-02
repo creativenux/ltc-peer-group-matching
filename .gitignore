@@ -206,5 +206,16 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-output/
+# Generated results. Only the reference run (3,000 profiles, seed 42) and the
+# evaluation results are committed, so the online view-only version has data.
+output/*
+!output/n3000/
+output/n3000/*
+!output/n3000/profiles_seed42.csv
+!output/n3000/profiles_seed42_*.png
+!output/n3000/validation_report_seed42.md
+!output/matching/
+output/matching/*
+!output/matching/matching_n3000_seed42.json
+!output/evaluation/
 .DS_Store

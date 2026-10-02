@@ -1,0 +1,6 @@
+﻿Method,Silhouette (weighted Gower matrix) mean,Silhouette (weighted Gower matrix) sd,Silhouette (unweighted Gower matrix) mean,Silhouette (unweighted Gower matrix) sd,Within-group weighted Gower distance mean,Within-group weighted Gower distance sd,Cohesion index (mean Score(G)) mean,Cohesion index (mean Score(G)) sd,Unmatched rate mean,Unmatched rate sd
+Weighted Gower (full method),0.1327,0.0108,0.1025,0.0082,0.1156,0.0026,0.8754,0.0016,0.0174,0.0026
+Unweighted Gower,0.056,0.0082,0.1367,0.0059,0.1412,0.0019,0.8555,0.0016,0.0174,0.0026
+Single attribute: age band,-0.2437,0.0063,-0.2244,0.0037,0.3842,0.0019,0.6469,0.0022,0.0174,0.0026
+Single attribute: support goal,-0.2321,0.0047,-0.2236,0.0041,0.2458,0.0028,0.753,0.0026,0.0174,0.0026
+Random,-0.2942,0.0061,-0.273,0.0036,0.4347,0.0029,0.6091,0.0025,0.0174,0.0026

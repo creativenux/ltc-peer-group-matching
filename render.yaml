@@ -1,0 +1,15 @@
+# Render deployment: a view-only web service. It serves the results committed
+# in output/ and does not generate data or run matching (READ_ONLY=1).
+services:
+  - type: web
+    name: ltc-peer-group-matching
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/state
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.9
+      - key: READ_ONLY
+        value: "1"
