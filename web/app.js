@@ -326,7 +326,7 @@ async function renderGroups() {
         `<button data-method="${m}" aria-pressed="${m === groupsState.method}">${esc(name)}</button>`).join('')}</div></div>
     </div>
     <div class="grid xl:grid-cols-[1fr_20rem] gap-6 mb-6">
-      <div class="map-wrap"><div id="map" class="map"></div><div id="map-tip" class="map-tip hidden"></div>
+      <div class="map-wrap"><div id="map" class="map"><div class="map-loading" role="status">Loading map…</div></div><div id="map-tip" class="map-tip hidden"></div>
         <p class="text-xs text-muted mt-2">Positions come from classical multidimensional scaling of the weighted Gower distances (Torgerson, 1952). The map is for display only: it plays no part in forming groups, and flattening to two dimensions distorts some distances. Hollow dots are people not placed in a group.</p></div>
       <div class="block"><h3>This pool, by method</h3>
         <p class="text-sm text-muted mb-2">Mean distance between members of the same group (weighted Gower; lower is closer).</p>

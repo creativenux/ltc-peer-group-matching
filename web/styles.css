@@ -70,6 +70,10 @@ code { font-size: 0.9em; background: #E6EAED; padding: 0.05em 0.3em; border-radi
 
 /* Group map */
 .map-wrap { position: relative; }
+.map-loading {
+  aspect-ratio: 820 / 520; display: grid; place-items: center; color: var(--muted);
+  background: #FBFCFC; border: 1px solid var(--rule); border-radius: 8px;
+}
 .map svg { width: 100%; height: auto; display: block; background: #FBFCFC; border: 1px solid var(--rule); border-radius: 8px; }
 .map .spoke { stroke: var(--teal); stroke-opacity: 0.35; stroke-width: 1; }
 .map.baseline .spoke { stroke: var(--ochre); }
