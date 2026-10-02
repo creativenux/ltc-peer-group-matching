@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+tabulate
+pytest
+fastapi
+uvicorn[standard]
+httpx

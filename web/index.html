@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peer Group Matching</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Atkinson Hyperlegible"', 'system-ui', 'sans-serif'] },
+          colors: {
+            paper: '#F2F4F5',
+            panel: '#FFFFFF',
+            ink: '#17212B',
+            muted: '#5B6773',
+            rule: '#D5DBE0',
+            teal: { DEFAULT: '#0F6E6E', soft: '#DCEFEE', deep: '#0A4F4F' },
+            ochre: { DEFAULT: '#B7791F', soft: '#F7ECDA' },
+            danger: '#B42318',
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:m-2 focus:p-2 focus:bg-panel">Skip to content</a>
+
+  <header class="border-b border-rule bg-panel">
+    <div class="max-w-[1400px] mx-auto px-4 md:px-6 py-3 flex flex-wrap items-center gap-x-6 gap-y-3">
+      <div class="mr-auto">
+        <h1 class="text-lg font-bold leading-tight">Peer group matching</h1>
+        <p class="text-sm text-muted">Forming support groups of six to eight people living with long-term conditions</p>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <label for="dataset-select" class="text-sm text-muted">Dataset</label>
+        <select id="dataset-select" class="field min-w-[12rem]"></select>
+        <button id="new-dataset" class="btn">New dataset</button>
+        <span id="match-status" class="text-sm" aria-live="polite"></span>
+        <button id="run-matching" class="btn btn-primary hidden">Run matching</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-[1400px] mx-auto px-4 md:px-6 py-6 md:grid md:grid-cols-[13rem_1fr] md:gap-8">
+    <nav aria-label="Pipeline stages" class="mb-6 md:mb-0">
+      <ol id="stages" class="stage-rail flex md:block gap-2 overflow-x-auto md:overflow-visible pb-2 md:pb-0">
+        <li><a href="#dataset" data-view="dataset"><span class="num">1</span>Dataset</a></li>
+        <li><a href="#rules" data-view="rules"><span class="num">2</span>Hard rules</a></li>
+        <li><a href="#groups" data-view="groups"><span class="num">3</span>Groups</a></li>
+        <li><a href="#profiles" data-view="profiles"><span class="num">4</span>Profiles</a></li>
+        <li><a href="#evaluation" data-view="evaluation"><span class="num">5</span>Evaluation</a></li>
+        <li><a href="#sensitivity" data-view="sensitivity"><span class="num">6</span>Sensitivity</a></li>
+      </ol>
+      <p class="hidden md:block text-xs text-muted mt-6 leading-relaxed">
+        Every result is read from and written to the <code>output/</code> folder, the same
+        files the command-line tools use.
+      </p>
+    </nav>
+
+    <main id="main" tabindex="-1" class="min-w-0">
+      <div id="notice" role="status" aria-live="polite"></div>
+      <div id="view"></div>
+    </main>
+  </div>
+
+  <dialog id="dataset-dialog" class="dialog">
+    <form method="dialog" id="dataset-form" class="space-y-4">
+      <h2 class="text-lg font-bold">Generate a dataset</h2>
+      <p class="text-sm text-muted">Creates synthetic profiles calibrated to UK data, with a validation
+        report and figures. Matching runs on up to 10,000 profiles; 3,000 is the working size.</p>
+      <div class="grid grid-cols-2 gap-3">
+        <label class="text-sm">Profiles
+          <input name="n" type="number" min="100" max="50000" value="3000" required class="field w-full mt-1">
+        </label>
+        <label class="text-sm">Seed
+          <input name="seed" type="number" min="0" max="1000000" value="42" required class="field w-full mt-1">
+        </label>
+      </div>
+      <p id="dataset-error" class="text-sm text-danger" role="alert"></p>
+      <div class="flex justify-end gap-2">
+        <button value="cancel" formnovalidate class="btn">Cancel</button>
+        <button id="dataset-submit" value="default" class="btn btn-primary">Generate dataset</button>
+      </div>
+    </form>
+  </dialog>
+
+  <aside id="drawer" class="drawer" aria-hidden="true" aria-labelledby="drawer-title" inert>
+    <div class="flex items-start justify-between gap-4 mb-4">
+      <h2 id="drawer-title" class="text-lg font-bold"></h2>
+      <button id="drawer-close" class="btn" aria-label="Close profile">Close</button>
+    </div>
+    <div id="drawer-body"></div>
+  </aside>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
